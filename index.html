@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweeter</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imeges/tweeter.svg" alt="Tweeter">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bookmarks</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="dropdown user-menu">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/imeges/seed/users/user-alex.jpg" height="32px" alt="">
+                    Xanthe Neal
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#"><span class="fa fa-user-circle"></span> My Profile</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="fa fa-user-friends"></span> Group Chat</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="fa fa-cog"></span> Settings</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-danger" href="#"><span class="fa fa-sign-out-alt"></span>
+                            Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content row">
+        <div class="container-fluid profile-background"
+            style="background-image: url(https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80);">
+        </div>
+
+        <div class="profile-wall">
+            <div class="container profile-header-status">
+                <div>
+                    <img class="user-profile-img"
+                        src="https://images.unsplash.com/profile-1502266855244-cb0ad93b0b14?dpr=1&auto=format&fit=crop&w=152&h=152&q=100&crop=faces&bg=fff"
+                        alt="">
+                </div>
+                <div class="user-profile-info">
+                    <div class="row">
+                        <div class="col-9 user-profile-details">
+                            <h2>Daniel Jensen</h2>
+                            <span><strong>2,569</strong> <span>Following</span></span>
+                            <span><strong>10.8K</strong> <span>Followers</span></span>
+
+                            <p class="mt-4 info-description">
+                                Photographer & Filmmaker based in Copenhagen, Denmark ✵ 🇩🇰
+                            </p>
+                        </div>
+
+                        <div class="col-2">
+                            <button type="button" class="btn btn-primary sm-wide-btn float-right"><i
+                                    class="fa fa-user-plus fa-flip-horizontal solid"></i> Follow</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container content-body mt-4">
+                <div class="row">
+                    <div class="col-3">
+                        <ul class="navbar-nav side-links">
+                            <li class="nav-item"><a href="" class="nav-link-side active">Tweets</a></li>
+                            <li><a href="">Tweets & replies</a></li>
+                            <li><a href="">Media</a></li>
+                            <li><a href="">Likes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-9">
+                        <div class="retweet-notification mb-2">
+                            <i class="fa fa-sync-alt solid"></i>
+                            <span> Daniel Jensen Retweeted</span>
+
+                        </div>
+                        <div class="bg-white post row">
+                            <div class="col-12 mt-3 mb-3">
+                                <div class="post-info mb-3">
+                                    <div class="row mb-3">
+                                        <div class="user-img"> <img class="icon"
+                                                src="assets/imeges/seed/users/user-alex.jpg" alt=""></div>
+                                        <div class="col-3">
+                                            <span>Peyton Lyons</span>
+                                            <i class="block info">24 August at 20:43</i>
+                                        </div>
+                                    </div>
+                                    <span> Traveling – it leaves you speechless, then turns you into a
+                                        storyteller.</span>
+                                </div>
+
+                                <img class="full-width"
+                                    src="https://images.unsplash.com/photo-1505164294036-5fad98506d20?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=705&h=330&q=80"
+                                    alt="">
+
+                                <div class="row mt-2">
+                                    <div class="offset-7 col-5 comments-count">
+                                        <div class="row">
+                                            <i class="col-3"></i>
+                                            <i class="col-3">
+                                                449 Comments
+                                            </i>
+                                            <i class="col-3">
+                                                59k Retweets
+                                            </i>
+                                            <i class="col-3">
+                                                234 Saved
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider mt-2 mb-2"></div>
+                                <div class="row mb-2 actions">
+                                    <a class="col-3">
+                                        <i class="fa fa-comment-alt"></i> Comments
+                                    </a>
+                                    <a class="col-3">
+                                        <i class="fa fa-sync-alt solid"></i> Retweets
+                                    </a>
+                                    <a class="col-3">
+                                        <i class="fa fa-heart"></i> Likes
+                                    </a>
+                                    <a class="col-3">
+                                        <i class="fa fa-bookmark"></i> Saved
+                                    </a>
+                                </div>
+
+                                <div class="add-comment form-group row">
+                                    <label class="user-img">
+                                        <img class="icon" src="assets/imeges/seed/users/user-alex.jpg" alt=""></label>
+                                    <div class="col">
+                                        <div class="inner-addon right-addon">
+                                            <i class="fa fa-image"></i>
+                                            <input type="text" class="form-control" placeholder="Tweet your reply">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="divider mt-2 mb-2"></div>
+                                <div class="row">
+                                    <div class="post-comment row mb-3">
+                                        <div class="user-img">
+                                            <img class="icon" src="assets/imeges/seed/users/user-alex.jpg"
+                                                alt=""></div>
+                                        <div class="col">
+                                            <div class="comment-details">
+                                                <div class="mb-2">
+                                                    <span>Waqar Bloom</span>
+                                                    <i class="info">24 August at 20:43</i>
+                                                </div>
+                                                <div>
+                                                    <span>I’ve seen awe-inspiring things that I thought I’d never be
+                                                        able to explain to another person.</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-3">
+                                                    <div class="row">
+                                                        <div class="col-5 info">
+                                                            <i class="fa fa-heart"></i> Like
+                                                        </div>
+
+                                                        <div class="col-5 info">
+                                                            12k Likes
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+
+                                    <div class="post-comment row mb-3">
+                                        <div class="user-img">
+                                            <img class="icon" src="assets/imeges/seed/users/user-alex.jpg"
+                                                alt=""></div>
+                                        <div class="col">
+                                            <div class="comment-details">
+                                                <div class="mb-2">
+                                                    <span>Bianca Sosa</span>
+                                                    <i class="info">24 August at 20:43</i>
+                                                </div>
+                                                <div>
+                                                    <span>I’ve felt this pull many times, like while road tripping through Morocco. Seeking out the vastness of the desert, and looking inward at the same time.</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-3">
+                                                    <div class="row">
+                                                        <div class="col-5 info text-danger-selected">
+                                                            <i class="fa fa-heart"></i> Liked
+                                                        </div>
+
+                                                        <div class="col-5 info">
+                                                            12k Likes
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
